@@ -248,7 +248,7 @@ Nginx recommends setting up an automatic renewal cron job.
 
 First, open the crontab configuration file for the current user:
 
-crontab --e
+*\$ crontab --e*
 
 Depending on text editor of choice, choose the corresponding number:
 
