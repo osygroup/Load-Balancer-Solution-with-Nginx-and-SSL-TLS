@@ -201,7 +201,7 @@ ensure that the certbot command can be run
 *\$ sudo ln -s /snap/bin/certbot /usr/bin/certbot*
 
 Edit the /etc/nginx/conf.d/load-balancer.conf file and replace \'*listen
-80*\' with \'*server-name \<domain_name\>*\' as seen below:
+80*\' with \'*server_name \<domain_name\>*\' as seen below:
 
 ![](https://github.com/osygroup/Images/blob/main/LB-and-TLS-with%20Nginx/image8.jpeg)
 
