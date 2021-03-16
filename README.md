@@ -216,7 +216,9 @@ Let's Encrypt security certificate.
 
 Follow the interactive prompt and answer the questions as requested. If
 everything is well configured, a congratulatory message is shown at the
-end. To confirm that the Nginx site is encrypted, visit the tooling
+end. Open port 443 (port number for https) in the Inbound port rules of the Network Security Group of the VM.
+
+To confirm that the Nginx site is encrypted, visit the tooling
 website with the domain name and observe the padlock symbol at the
 beginning of the URL. This indicates that the site is secured using an
 SSL/TLS encryption.
@@ -248,7 +250,7 @@ Nginx recommends setting up an automatic renewal cron job.
 
 First, open the crontab configuration file for the current user:
 
-*\$ crontab --e*
+*\$ crontab -e*
 
 Depending on text editor of choice, choose the corresponding number:
 
