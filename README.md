@@ -97,39 +97,7 @@ nano:
 
 
 In the load-balancer.conf, define the following two segments, *upstream*
-and *server*, as in the example below:
-
-*\# Define which servers to include in the load balancing scheme.*
-
-*\# It\'s best to use the servers\' private IPs for better performance
-and security.*
-
-*upstream backend {*
-
-*server 10.0.0.6;*
-
-*server 10.0.0.7;*
-
-*server 10.0.0.8;*
-
-*}*
-
-*\# This server accepts all traffic to port 80 and passes it to the
-upstream.*
-
-*\# Notice that the upstream name and the proxy_pass need to match.*
-
-*server {*
-
-*listen 80;*
-
-*location / {*
-
-*proxy_pass http://backend;*
-
-*}*
-
-*}*
+and *server*, as in the load-balancer.conf file in the repository:
 
 ![](https://github.com/osygroup/Images/blob/main/LB-and-TLS-with%20Nginx/image4.png)
 
