@@ -93,6 +93,8 @@ nano:
 
 \$ sudo nano /etc/nginx/conf.d/load-balancer.conf
 
+<script src="https://gist.github.com/osygroup/b6ea814d80490d56e85194624daf04b2.js"></script>
+
 In the load-balancer.conf, define the following two segments, *upstream*
 and *server*, as in the example below:
 
